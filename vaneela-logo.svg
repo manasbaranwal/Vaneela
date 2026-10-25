@@ -1,0 +1,31 @@
+<svg width="700" height="700" viewBox="0 0 700 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bagGradient" x1="110" y1="100" x2="620" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7C5D"/>
+      <stop offset="0.48" stop-color="#F55AA6"/>
+      <stop offset="1" stop-color="#D049F1"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="300" y1="120" x2="520" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB08A" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFB08A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#FFD0F0" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#A83EFE" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <path d="M175 262C175 179.911 240.911 114 323 114H377C459.089 114 525 179.911 525 262V290C525 338.959 484.959 379 436 379H264C215.041 379 175 338.959 175 290V262Z" fill="#F8F0FF" fill-opacity="0.9"/>
+    <path d="M209 262C209 197.41 261.41 145 326 145H374C438.59 145 491 197.41 491 262V295C491 322.614 468.614 345 441 345H259C231.386 345 209 322.614 209 295V262Z" stroke="#F8F0FF" stroke-width="22" stroke-linecap="round"/>
+    <path d="M170 254C170 178.488 230.488 118 306 118H394C469.512 118 530 178.488 530 254V330C530 385.228 485.228 430 430 430H270C214.772 430 170 385.228 170 330V254Z" fill="url(#bagGradient)"/>
+    <path d="M170 254C170 178.488 230.488 118 306 118H394C469.512 118 530 178.488 530 254V330C530 385.228 485.228 430 430 430H270C214.772 430 170 385.228 170 330V254Z" fill="url(#highlight)"/>
+    <path d="M263 251C263 209.026 296.026 176 338 176H362C403.974 176 437 209.026 437 251V289H263V251Z" stroke="#F5ECFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 262C256 235.49 278.49 214 305 214H395C421.51 214 444 235.49 444 262V286H256V262Z" stroke="#F5ECFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <path d="M278 203L375 500H445L534 203H476L412 405L347 203H278Z" fill="#F8F0FF"/>
+    <path d="M386 355L512 355L446 492H528L377 617L413 468H338L386 355Z" fill="#F8F0FF"/>
+  </g>
+</svg>
