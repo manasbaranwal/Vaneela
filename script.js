@@ -20,3 +20,19 @@ const observer = new IntersectionObserver(
 );
 
 revealEls.forEach((el) => observer.observe(el));
+
+const brokenAnchors = document.querySelectorAll('a[href="#"]');
+brokenAnchors.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const anchorTarget = link.getAttribute("data-target");
+    if (anchorTarget) {
+      const targetEl = document.getElementById(anchorTarget);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
